@@ -12,7 +12,7 @@ data "template_file" "user_data" {
 
 
 resource "aws_instance" "rh9-0001" {
-  ami                            = "ami-06863551a8f6d6b1f"
+  ami                            = "ami-068638f6d6b1f"
   instance_type                  = var.default_instance_type
   key_name                       = var.miaws_key
   vpc_security_group_ids         = [aws_security_group.redhat9_sg.id]
